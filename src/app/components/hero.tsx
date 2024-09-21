@@ -28,7 +28,7 @@ const Hero = () => {
         </p>
 
         <p className="mt-4 text-center text-white text-sm sm:text-base ml-1">
-          Let's turn your vision into a stunning reality!
+          Let&apos;s turn your vision into a stunning reality!
         </p>
 
         <div className="flex flex-col items-center mt-8 gap-4">
@@ -38,7 +38,7 @@ const Hero = () => {
           </button>
 
           <button className="inline-flex items-center gap-2 border border-white/15 rounded-xl px-4 sm:px-6 h-10 sm:h-12 bg-white text-black hover:bg-yellow-500 transition duration-700">
-            <span className="font-semibold">Let's connect</span>
+            <span className="font-semibold">Let&apos;s connect</span>
             <span className="size-4 mb-2 animate-bounce">👋</span>
           </button>
           

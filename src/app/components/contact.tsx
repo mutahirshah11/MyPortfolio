@@ -11,10 +11,10 @@ const Contact = () => {
       <div className='container mx-auto px-4 sm: mt-20'>
         <div className='mt-10 bg-gradient-to-l from-yellow-500 to-sky-500 text-black font-normal text-center py-8 px-6 border-2 w-full md:w-[80%] lg:w-[70%] mx-auto h-auto border-black rounded-3xl'>
           <h2 className='font-serif font-semibold text-2xl md:text-3xl'>
-            Let's create something amazing together
+            Let&apos;s create something amazing together
           </h2>
           <p className='text-sm md:text-md mt-3'>
-            Want to bring your imaginable project to life? Let's connect and discuss how I can help you achieve your goals.
+            Want to bring your imaginable project to life? Let&apos;s connect and discuss how I can help you achieve your goals.
           </p>
 
           <div className='text-white bg-gray-900 inline-flex justify-center items-center rounded-xl font-sans w-full md:w-[265px] h-[40px] text-center border-black border-2 mt-4'>
