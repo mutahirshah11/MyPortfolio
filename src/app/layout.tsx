@@ -1,4 +1,3 @@
-
 import localFont from "next/font/local";
 import {Inter , Calistoga} from "next/font/google"
 import "./globals.css";

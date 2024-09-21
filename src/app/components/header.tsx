@@ -2,11 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import logo1 from '../images/photos1/Black___Blue_Minimalist_Modern_Initial_Font_Logo-removebg-preview.png'
-import Aboutme from './aboutme';
-import About from '../about/page';
-import ContactP from '../contact/page';
-import Reviews from '../reviews/page';
-import project from '../projects/page';
 import Navbar from './navbar';
 
 const Header = () => {

@@ -1,9 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import project from '../projects/page' 
-import About from '../about/page'
-import Reviews from '../reviews/page'
-import Contact from './contact'
+
 
 
 const Navbar = () => {
