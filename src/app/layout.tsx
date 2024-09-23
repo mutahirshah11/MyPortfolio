@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
+import { Analytics } from "@vercel/analytics/react"
 
 // Applying font definitions
 const inter = Inter({ subsets: ['latin'], variable: "--font-sans" });
@@ -28,6 +29,7 @@ export default function RootLayout({
       {/* Apply font classes to the body */}
       <body className={`${inter.variable} ${calistoga.variable} ${geistSans.variable} ${geistMono.variable} bg-gray-900 text-white`}>
         {children}
+        <Analytics/>
         <Footer />
       </body>
     </html>
