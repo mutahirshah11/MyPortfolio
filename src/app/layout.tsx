@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Apply font classes to the body */}
-      <body className={`${inter.variable} ${calistoga.variable} ${geistSans.variable} ${geistMono.variable} bg-gradient-to-r from-gray-900 to-slate-900 text-white`}>
+      <body className={`${inter.variable} ${calistoga.variable} ${geistSans.variable} ${geistMono.variable}  bg-gray-900 text-white`}>
         {children}
         <Analytics/>
         <Footer />

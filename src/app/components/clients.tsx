@@ -60,21 +60,21 @@ const Clients = () => {
 
     <div className='animate-fadeInUp '>
     
-    <div className='container pt-20 ' >   
+    <div className='pt-20 ' >   
 
         {/* text-section */}
 
-       <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
-       ♥ Happy Clients ♥
+       <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center ml-5">
+       ♥ My Happy Clients ♥
         </p>
       </div>
 
-      <h1 className="font-serif text-3xl sm:text-5xl text-center mt-8 sm:mt-16">
+      <h1 className="font-serif text-3xl sm:text-5xl text-center mt-8 sm:mt-16 ml-5">
        What Clients say About Me 
       </h1>
       
-      <p className="text-center text-white/60 mt-5 mx-auto w-[90%] sm:w-[60%]">
-      Curious about my work ? let my clients tell you about their experience :)
+      <p className="text-center text-white/60 mt-5 mx-auto w-[90%] sm:w-[60%] pl-5">
+      Curious about my work? let my clients tell you about their experience :)
       </p>
           
 

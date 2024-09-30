@@ -12,20 +12,6 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-
-      fontFamily: {
-        comic: ['"Comic Sans MS"', 'cursive'],
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-        mono: ['Fira Code', 'monospace'],
-        display: ['Oswald', 'sans-serif'],
-        body: ['"Open Sans"', 'sans-serif'],
-        heading: ['"Playfair Display"', 'serif'],
-        poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-        lato: ['Lato', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-      },
       animation: {
         bounceSlow: 'bounce 3s infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
