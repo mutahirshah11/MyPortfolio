@@ -32,11 +32,15 @@ const portfolioProjects = [
     image: facebookpage,
   },
   {
-    ProjectName: "Coming soon ...",
+    ProjectName: "Coming soon ..",
     Languages: [],
     link: "#",
     image: comingsoon,
   },
+
+  
+
+  
 ];
 
 const Projectsection = () => {
@@ -62,19 +66,21 @@ const Projectsection = () => {
         {portfolioProjects.map((project, index) => (
           <div 
             key={index} 
-            className="w-full h-auto p-4 rounded-[30px] border-2 border-gray-500/70 bg-teal-500/20 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-blue-600"
+            className="w-full h-auto p-4 rounded-[20px] border-2 border-gray-500/70 bg-teal-500/20 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-blue-600"
           >
-            {/* Project Name */}
-            <h3 className="text-center text-black font-bold text-lg sm:text-2xl mt-4 border-4 rounded-full w-[80%] mx-auto bg-gradient-to-l border-gray-800 from-yellow-400 to-blue-400">
-              {project.ProjectName}
-            </h3>
+           
 
             {/* Project Image */}
             <Image 
               src={project.image} 
               alt={project.ProjectName} 
-              className="w-full h-auto border-[5px] border-black mt-4 mx-auto rounded-2xl hover:animate-heartbeat"
+              className="w-full h-auto border-[4px] border-gray-950 mt-4 mx-auto rounded-2xl "
             />
+
+             {/* Project Name */}
+             <h3 className="text-center text-black font-comic text-lg sm:text-2xl mt-4 border-[4px] border-slate-950 rounded-md w-[80%] mx-auto bg-blue-200">
+              {project.ProjectName}
+            </h3>
             
             {/* Language Icons */}
             <ul className="flex justify-center mt-4 space-x-4">
@@ -87,7 +93,7 @@ const Projectsection = () => {
 
             {/* View Live Button */}
             <Link href={project.link}>
-              <button className="block mx-auto mt-4 bg-white text-black font-bold h-[42px] w-auto px-6 rounded-3xl hover:bg-yellow-200 ring ring-yellow-500 transition-all duration-200">
+              <button className="block mx-auto mt-4 bg-yellow-200 text-black font-bold h-[42px] w-auto px-6 rounded-2xl hover:bg-yellow-500 ring ring-yellow-500 transition-all duration-200">
                 View Live
               </button>
             </Link>
