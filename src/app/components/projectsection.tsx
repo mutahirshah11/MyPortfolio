@@ -9,6 +9,7 @@ import html from '../images/photos1/html.png';
 import css from '../images/photos1/css-removebg-preview.png';
 import tailwind from '../images/photos1/tailwind-removebg-preview.png';
 import nextjs from '../images/photos1/Next.js-1.png';
+import jwelllery from "../images/photos1/"
 
 const portfolioProjects = [
   {
@@ -28,9 +29,10 @@ const portfolioProjects = [
       { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
       { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
     ],
-    link: "#",
+    link: "https://reume-builder-basic5.vercel.app/",
     image: facebookpage,
   },
+
   {
     ProjectName: "Coming soon ..",
     Languages: [],
@@ -38,6 +40,45 @@ const portfolioProjects = [
     image: comingsoon,
   },
 
+
+  {
+    ProjectName: "Facebook Page Clone",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://reume-builder-basic5.vercel.app/",
+    image: facebookpage,
+  },
+
+
+
+
+  {
+    ProjectName: "Facebook Page Clone",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://reume-builder-basic5.vercel.app/",
+    image: facebookpage,
+  },
+
+
+
+
+  {
+    ProjectName: "Facebook Page Clone",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://reume-builder-basic5.vercel.app/",
+    image: facebookpage,
+  },
   
 
   
@@ -66,7 +107,7 @@ const Projectsection = () => {
         {portfolioProjects.map((project, index) => (
           <div 
             key={index} 
-            className="w-full h-auto p-4 rounded-[20px] border-2 border-gray-500/70 bg-teal-500/20 transition-transform transform hover:scale-105 hover:shadow-xl hover:shadow-blue-600"
+            className="w-full h-auto py-4  rounded-[20px] border-2 border-black bg-teal-500/20 transition-transform transform hover:scale-105 duration-300"
           >
            
 
@@ -74,11 +115,11 @@ const Projectsection = () => {
             <Image 
               src={project.image} 
               alt={project.ProjectName} 
-              className="w-full h-auto border-[4px] border-gray-950 mt-4 mx-auto rounded-2xl "
+              className="w-full h-auto border-[0px] pt-0 border-gray-950 mt-[-16px] mx-auto rounded-none rounded-t-[17px] "
             />
 
              {/* Project Name */}
-             <h3 className="text-center text-black font-comic text-lg sm:text-2xl mt-4 border-[4px] border-slate-950 rounded-md w-[80%] mx-auto bg-blue-200">
+             <h3 className="text-center text-slate-300  font-bold xl:pb-3 text-lg sm:text-2xl mt-4 border-[0px] border-slate-950 rounded-md w-[80%] mx-auto ">
               {project.ProjectName}
             </h3>
             

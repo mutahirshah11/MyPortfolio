@@ -30,7 +30,7 @@ const Tape = () => {
         {word.map((word) => (
           <div key={word} className="inline-flex gap-4 items-center ">
             <span className="text-black uppercase font-extrabold -rotate-1">{word}</span>
-            <Image src={Stars} alt="stars" className="size-6 text-black -rotate-6 "/>
+            <Image src={Stars} alt="stars" className="size-6 text-black -rotate-6 mr-5 xl:mr-0"/>
             
 
           </div>

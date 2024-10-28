@@ -10,7 +10,7 @@ const Hero = () => {
           <Image 
             src={profile} 
             alt="profilepic" 
-            className="w-[150px] sm:w-[200px] animate- h-auto border-[13px] border-l-yellow-500 border-r-yellow-500 border-t-blue-600 border-b-blue-600 rounded-full border-dashed opacity-90 animate-tada "
+            className="w-[150px] sm:w-[200px] animate- h-auto border-[13px] border-l-yellow-500 border-r-yellow-500 border-t-blue-600 border-b-blue-600 rounded-full border-dashed opacity-90 animate-tada xl:size-[240px] "
           />
 
           <div className="bg-gray-950 border border-gray-700 px-4 py-1.5 inline-flex rounded-[20px] mt-[10px]">
