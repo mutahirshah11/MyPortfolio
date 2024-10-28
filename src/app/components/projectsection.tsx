@@ -9,7 +9,7 @@ import html from '../images/photos1/html.png';
 import css from '../images/photos1/css-removebg-preview.png';
 import tailwind from '../images/photos1/tailwind-removebg-preview.png';
 import nextjs from '../images/photos1/Next.js-1.png';
-import jwelllery from "../images/photos1/"
+
 
 const portfolioProjects = [
   {
