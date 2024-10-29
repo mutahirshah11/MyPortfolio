@@ -11,7 +11,7 @@ import Karachi from '../images/photos1/karachi.png';
 import emoji from '../images/photos1/memoji-smile.png';
 
 const toolbox = [
-  { title: 'Html', icon: html },
+  { title: 'Html', icon: html  },
   { title: 'Typescript', icon: typescript },
   { title: 'Css', icon: css },
   { title: 'Tailwind css', icon: tailwind },
