@@ -9,7 +9,7 @@ import html from '../images/photos1/html.png';
 import css from '../images/photos1/css-removebg-preview.png';
 import tailwind from '../images/photos1/tailwind-removebg-preview.png';
 import nextjs from '../images/photos1/Next.js-1.png';
-import jwel from "../images/clients/jwel.png"
+import jwel from "../images/clients/jwel2.png"
 import perfume from "../images/clients/per.png"
 import realestate from "../images/clients/real.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
