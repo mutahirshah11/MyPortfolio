@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '700px',    // Small screens
+        'md': '710px',    // Medium screens
+        'lg': '1000px',   // Large screens
+        'xl': '1200px',   // Extra large screens
+        '2xl': '1536px',  // 2X large screens
+      },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

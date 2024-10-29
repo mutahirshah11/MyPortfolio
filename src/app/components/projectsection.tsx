@@ -9,9 +9,56 @@ import html from '../images/photos1/html.png';
 import css from '../images/photos1/css-removebg-preview.png';
 import tailwind from '../images/photos1/tailwind-removebg-preview.png';
 import nextjs from '../images/photos1/Next.js-1.png';
+import jwel from "../images/clients/jwel.png"
+import perfume from "../images/clients/per.png"
+import realestate from "../images/clients/real.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong, faEye } from '@fortawesome/free-solid-svg-icons';
 
 
 const portfolioProjects = [
+  
+  {
+    ProjectName: "Jwellery Store UI/UX",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://jwelery-empire.vercel.app/",
+    image: jwel,
+  },
+
+
+
+
+  {
+    ProjectName: "Perfume Shop UI/UX",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://perfume-luxelle.vercel.app/",
+    image: perfume,
+  },
+
+
+
+
+  {
+    ProjectName: "Real Estate UI/UX",
+    Languages: [
+      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
+      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
+      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
+    ],
+    link: "https://westopen-orcin.vercel.app/",
+    image: realestate,
+  },
+  
+
+  
   {
     ProjectName: "Amazon Web Clone",
     Languages: [
@@ -41,45 +88,7 @@ const portfolioProjects = [
   },
 
 
-  {
-    ProjectName: "Facebook Page Clone",
-    Languages: [
-      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
-      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
-      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
-    ],
-    link: "https://reume-builder-basic5.vercel.app/",
-    image: facebookpage,
-  },
-
-
-
-
-  {
-    ProjectName: "Facebook Page Clone",
-    Languages: [
-      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
-      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
-      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
-    ],
-    link: "https://reume-builder-basic5.vercel.app/",
-    image: facebookpage,
-  },
-
-
-
-
-  {
-    ProjectName: "Facebook Page Clone",
-    Languages: [
-      { title: <Image src={nextjs} alt='nextjslogo' width={40} height={10} /> },
-      { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
-      { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
-    ],
-    link: "https://reume-builder-basic5.vercel.app/",
-    image: facebookpage,
-  },
-  
+ 
 
   
 ];
@@ -103,11 +112,12 @@ const Projectsection = () => {
       </p>
 
       {/* Projects Grid */}
+      <div className='flex flex-col justify-center items-center'>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
         {portfolioProjects.map((project, index) => (
           <div 
             key={index} 
-            className="w-full h-auto py-4  rounded-[20px] border-2 border-black bg-teal-500/20 transition-transform transform hover:scale-105 duration-300"
+            className="w-[340px] h-[372px] lg:w-[320px] lg:h-[360px] xl:w-[390px] xl:h-[400px] cursor-pointer py-4  rounded-[20px] border-2 border-black bg-teal-500/20 transition-transform transform hover:scale-105 duration-300"
           >
            
 
@@ -115,7 +125,7 @@ const Projectsection = () => {
             <Image 
               src={project.image} 
               alt={project.ProjectName} 
-              className="w-full h-auto border-[0px] pt-0 border-gray-950 mt-[-16px] mx-auto rounded-none rounded-t-[17px] "
+              className="w-full h-[205px] border-[0px] pt-0 border-gray-950 mt-[-16px] mx-auto rounded-none rounded-t-[17px] "
             />
 
              {/* Project Name */}
@@ -133,16 +143,20 @@ const Projectsection = () => {
             </ul>
 
             {/* View Live Button */}
-            <Link href={project.link}>
-              <button className="block mx-auto mt-4 bg-yellow-200 text-black font-bold h-[42px] w-auto px-6 rounded-2xl hover:bg-yellow-500 ring ring-yellow-500 transition-all duration-200">
-                View Live
+            <Link href={project.link} className='opacity-100  '>
+              <div className=''>
+              <button className=" mt-5 bg-gray-200 text-black font-bold h-[35px] w-[35px] md:mt-2 lg:mt-0  rounded-full hover:bg-yellow-500 hover:ring-yellow-500 ring ring-gray-200 transition-all duration-700 ml-[280px] lg:ml-[265px] xl:mt-6 xl:ml-[325px]  ">
+              <FontAwesomeIcon icon={faArrowRightLong} className='xl:size-6 xl:ml-1.5  size-5 ml-1.5   ' />
               </button>
+              </div>
             </Link>
           </div>
         ))}
       </div>
     </div>
-  );
-};
+     </div>
+      );
+    };
+      
 
 export default Projectsection;
