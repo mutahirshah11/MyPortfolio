@@ -19,7 +19,7 @@ const Tape = () => {
     return (
        
 
-      <div className="py-16 lg:py-24 overflow-x-clip ">
+      <div className="py-16 lg:py-24 overflow-x-clip cursor-pointer">
         
         
         

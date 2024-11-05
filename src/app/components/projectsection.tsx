@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import amazonpage from '../images/photos1/amazon.png';
 import facebookpage from '../images/photos1/facebook.png';
-import comingsoon from '../images/photos1/coming55.png';
+import comingsoon from '../images/photos1/coming.jpg';
 import typescript from '../images/photos1/typescript.png';
 import html from '../images/photos1/html.png';
 import css from '../images/photos1/css-removebg-preview.png';
@@ -81,7 +81,7 @@ const portfolioProjects = [
   },
 
   {
-    ProjectName: "Coming soon ..",
+    ProjectName: "Coming soon Inshallah ..",
     Languages: [],
     link: "#",
     image: comingsoon,
@@ -117,7 +117,7 @@ const Projectsection = () => {
         {portfolioProjects.map((project, index) => (
           <div 
             key={index} 
-            className="w-[340px] h-[372px] lg:w-[320px] lg:h-[360px] xl:w-[390px] xl:h-[400px] cursor-pointer py-4  rounded-[20px] border-2 border-black bg-teal-500/20 transition-transform transform hover:scale-105 duration-300"
+            className="w-[340px] h-[372px] md:h-[360px] lg:w-[320px] lg:h-[360px] xl:w-[390px] xl:h-[380px] cursor-pointer py-4  rounded-[20px] border-2 border-black bg-teal-500/20 transition-transform transform hover:scale-105 duration-300"
           >
            
 
@@ -125,11 +125,11 @@ const Projectsection = () => {
             <Image 
               src={project.image} 
               alt={project.ProjectName} 
-              className="w-full h-[205px] border-[0px] pt-0 border-gray-950 mt-[-16px] mx-auto rounded-none rounded-t-[17px] "
+              className="w-full xl:h-[205px] lg:h-[185px] md:h-[180px] h-[190px] border-[0px] pt-0 border-gray-950 mt-[-16px] mx-auto rounded-none rounded-t-[17px] "
             />
 
              {/* Project Name */}
-             <h3 className="text-center text-slate-300  font-bold xl:pb-3 text-lg sm:text-2xl mt-4 border-[0px] border-slate-950 rounded-md w-[80%] mx-auto ">
+             <h3 className="text-center text-slate-300  font-bold xl:pb-3 text-xl md:text-2xl mt-4 border-[0px] border-slate-950 rounded-md w-[80%] mx-auto ">
               {project.ProjectName}
             </h3>
             
@@ -137,15 +137,15 @@ const Projectsection = () => {
             <ul className="flex justify-center mt-4 space-x-4">
               {project.Languages.map((language, index) => (
                 <li key={index}>
-                  <div className="w-8 sm:w-10">{language.title}</div>
+                  <div className="w-10">{language.title}</div>
                 </li>
               ))}
             </ul>
 
             {/* View Live Button */}
-            <Link href={project.link} className='opacity-100  '>
+            <Link href={project.link} className={`${index === 5 ? 'hidden' : 'opacity-100'}`}>
               <div className=''>
-              <button className=" mt-5 bg-gray-200 text-black font-bold h-[35px] w-[35px] md:mt-2 lg:mt-0  rounded-full hover:bg-yellow-500 hover:ring-yellow-500 ring ring-gray-200 transition-all duration-700 ml-[280px] lg:ml-[265px] xl:mt-6 xl:ml-[325px]  ">
+              <button className=" mt-5 bg-gray-200 text-black font-bold h-[35px] w-[35px] md:mt-2 lg:mt-3 rounded-full hover:bg-yellow-500 hover:ring-yellow-500 ring ring-gray-200 transition-all duration-700 ml-[280px] lg:ml-[265px] xl:mt-0 xl:ml-[325px]  ">
               <FontAwesomeIcon icon={faArrowRightLong} className='xl:size-6 xl:ml-1.5  size-5 ml-1.5   ' />
               </button>
               </div>

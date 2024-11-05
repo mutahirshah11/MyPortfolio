@@ -8,8 +8,8 @@ import facebook from '../images/photos1/facebookicon-removebg-preview.png'
 const Contact = () => {
   return (
     <div className='py-12'>
-      <div className='container mx-auto px-4 sm: mt-20'>
-        <div className='mt-10 bg-gradient-to-l from-yellow-500 to-sky-500 text-black font-normal text-center py-8 px-6 border-2 w-full md:w-[80%] lg:w-[70%] mx-auto h-auto border-black rounded-3xl'>
+      <div className='container mx-auto px-4 sm: mt-20 '>
+        <div className='mt-10 bg-gradient-to-l from-yellow-500 to-sky-500 text-black font-normal text-center py-8 px-6 border-2 w-full md:w-[80%] lg:w-[70%] mx-auto h-auto border-black rounded-3xl cursor-pointer'>
           <h2 className='font-serif font-semibold text-2xl md:text-3xl'>
             Let&apos;s create something amazing together
           </h2>

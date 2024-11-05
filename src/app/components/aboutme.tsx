@@ -30,8 +30,8 @@ const hobbies = [
 
 const Aboutme = () => {
   return (
-    <div className="py-24 px-4 sm:px-6 lg:px-8 animate-fadeInUp">
-      <div className="container mx-auto my-[-30px]">
+    <div className="py-24 px-4 sm:px-6 lg:px-8 animate-fadeInUp ">
+      <div className="container mx-auto my-[-30px] ">
         {/* Section Title */}
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
@@ -49,7 +49,7 @@ const Aboutme = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-16">
           {/* My Reads Card */}
-          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 max-w-lg mx-auto h-auto flex flex-col justify-between">
+          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 max-w-lg mx-auto h-auto flex flex-col justify-between cursor-pointer ">
             <div className="inline-flex items-center gap-2 mt-2">
               <Image src={Stars} alt="stars" className="w-7 text-emerald-300" />
               <h3 className="font-serif text-3xl">My Reads</h3>
@@ -64,7 +64,7 @@ const Aboutme = () => {
 
 
           {/* Map Card */}
-          <div className="bg-gray-800 rounded-3xl border-gray-700 border-4 max-w-lg mx-auto h-auto relative p-0 mt-3 ">
+          <div className="bg-gray-800 rounded-3xl border-gray-700 border-4 max-w-lg mx-auto h-auto relative p-0 mt-3 cursor-pointer">
             <Image src={Karachi} alt="karachi-map" className="w-full h-full rounded-3xl object-cover" />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-green-400/80 border-gray-500 border-[1px] animate-blink ">
               <Image src={emoji} alt="smiling emoji" className="w-full h-full hover:animate-wiggle" />
@@ -74,7 +74,7 @@ const Aboutme = () => {
           
 
           {/* Beyond the Code Card */}
-          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 w-full h-auto max-w-lg mx-auto flex flex-col  ">
+          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 w-full h-auto max-w-lg mx-auto flex flex-col cursor-pointer   ">
             <div className="inline-flex items-center gap-2 mt-2">
               <Image src={Stars} alt="stars" className="w-7 text-emerald-300" />
               <h3 className="font-serif text-3xl">Beyond the Code</h3>
@@ -97,7 +97,7 @@ const Aboutme = () => {
 
 
           {/* My Tools Card */}
-          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 w-full h-auto max-w-lg mx-auto flex flex-col">
+          <div className="bg-gray-800 rounded-3xl px-6 border-gray-700 border-4 w-full h-auto max-w-lg mx-auto flex flex-col cursor-pointer">
             <div className="inline-flex items-center gap-2 mt-2">
               <Image src={Stars} alt="stars" className="w-7 text-emerald-300" />
               <h3 className="font-serif text-3xl">My Tools</h3>

@@ -80,7 +80,7 @@ const Clients = () => {
 
        {/* client section  */}
 
-       <div className="mt-20 flex overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar h-[250px] ">
+       <div className="mt-20 flex overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar h-[250px] cursor-pointer ">
 
         <div className='flex gap-8 flex-none '>
         {clients.map(clients=> (
