@@ -113,7 +113,7 @@ const Projectsection = () => {
 
       {/* Projects Grid */}
       <div className='flex flex-col justify-center items-center'>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10 mt-24">
         {portfolioProjects.map((project, index) => (
           <div 
             key={index} 
