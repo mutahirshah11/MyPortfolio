@@ -76,7 +76,7 @@ const portfolioProjects = [
       { title: <Image src={tailwind} alt='tailwindlogo' width={40} height={10} className="mt-[7px]" /> },
       { title: <Image src={typescript} alt='typescriptlogo' width={40} height={10} /> },
     ],
-    link: "https://reume-builder-basic5.vercel.app/",
+    link: "#",
     image: facebookpage,
   },
 
