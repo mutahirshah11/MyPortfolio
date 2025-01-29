@@ -7,7 +7,7 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 
 const Hero = () => {
   return (
-    <div className=" md:my-14">
+    <div className=" md:my-10">
       {/* Background Grid Effect */}
       <div className="" />
            
@@ -60,13 +60,13 @@ const Hero = () => {
 
               {/* Social Links */}
               <div className="flex items-center gap-4 justify-center lg:justify-start pt-4">
-                <Link href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <Link href="https://github.com/mutahirshah11" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <Github className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <Link href="https://www.linkedin.com/in/mutahir-hussain-shah-7037602b4/" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </Link>
-                <Link href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <Link href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRqgrwGHWnjfPqfdRCmmSKRThSvQjtHLgTrDMfBpssxFffTtwBmDmkXLpNzsQbRJMrcssCv" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                   <Mail className="w-5 h-5" />
                 </Link>
               </div>
