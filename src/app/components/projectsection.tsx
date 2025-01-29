@@ -352,7 +352,7 @@ const Projectsection = () => {
               </div>
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-bold text-white mb-3">
+              <h3 className="text-lg font-bold text-white mb-3 ">
                 {project.ProjectName}
               </h3>
               <div className="flex justify-between items-center">
