@@ -30,7 +30,7 @@ const hobbies = [
 
 const Aboutme = () => {
   return (
-    <div className="py-24 px-4 sm:px-6 lg:px-8 animate-fadeInUp ">
+    <div className="py-24 px-4 sm:px-6 lg:px-8 animate-fadeInUp relative  ">
       <div className="container mx-auto my-[-30px] ">
         {/* Section Title */}
         <div className="flex justify-center">

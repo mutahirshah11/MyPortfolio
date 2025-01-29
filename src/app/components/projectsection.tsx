@@ -1,23 +1,108 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRightLong, faEye } from "@fortawesome/free-solid-svg-icons"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong, faEye } from "@fortawesome/free-solid-svg-icons";
 
 // Import your images here
-import amazonpage from "../images/photos1/amazon.png"
-import facebookpage from "../images/photos1/facebook.png"
-import comingsoon from "../images/photos1/coming.jpg"
-import typescript from "../images/photos1/typescript.png"
-import html from "../images/photos1/html.png"
-import css from "../images/photos1/css-removebg-preview.png"
-import tailwind from "../images/photos1/tailwind-removebg-preview.png"
-import nextjs from "../images/photos1/Next.js-1.png"
-import jwel from "../images/clients/jwel2.png"
-import perfume from "../images/clients/per.png"
-import realestate from "../images/clients/real.png"
+import amazonpage from "../images/photos1/amazon.png";
+import facebookpage from "../images/photos1/facebook.png";
+import comingsoon from "../images/photos1/coming.jpg";
+import typescript from "../images/photos1/typescript.png";
+import html from "../images/photos1/html.png";
+import css from "../images/photos1/css-removebg-preview.png";
+import tailwind from "../images/photos1/tailwind-removebg-preview.png";
+import nextjs from "../images/photos1/Next.js-1.png";
+import jwel from "../images/clients/jwel2.png";
+import perfume from "../images/clients/per.png";
+import realestate from "../images/clients/real.png";
+import Sofa from "../images/photos1/sofa.png";
+import blog from "../images/photos1/blogg.png";
 
 const portfolioProjects = [
+  {
+    ProjectName: "Cars Dynamic Blog Website ",
+    Languages: [
+      {
+        title: (
+          <Image
+            src={nextjs || "/placeholder.svg"}
+            alt="nextjslogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+      {
+        title: (
+          <Image
+            src={tailwind || "/placeholder.svg"}
+            alt="tailwindlogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+      {
+        title: (
+          <Image
+            src={typescript || "/placeholder.svg"}
+            alt="typescriptlogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+    ],
+    link: "https://furnitureheaven-navy.vercel.app/",
+    image: blog,
+  },
+
+
+  {
+    ProjectName: "Full Stack E-commerce Website",
+    Languages: [
+      {
+        title: (
+          <Image
+            src={nextjs || "/placeholder.svg"}
+            alt="nextjslogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+      {
+        title: (
+          <Image
+            src={tailwind || "/placeholder.svg"}
+            alt="tailwindlogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+      {
+        title: (
+          <Image
+            src={typescript || "/placeholder.svg"}
+            alt="typescriptlogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
+        ),
+      },
+    ],
+    link: "https://furnitureheaven-navy.vercel.app/",
+    image: Sofa,
+  },
+
   {
     ProjectName: "Jwellery Store UI/UX",
     Languages: [
@@ -143,12 +228,24 @@ const portfolioProjects = [
     Languages: [
       {
         title: (
-          <Image src={html || "/placeholder.svg"} alt="htmllogo" width={32} height={32} className="object-contain" />
+          <Image
+            src={html || "/placeholder.svg"}
+            alt="htmllogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
         ),
       },
       {
         title: (
-          <Image src={css || "/placeholder.svg"} alt="csslogo" width={32} height={32} className="object-contain" />
+          <Image
+            src={css || "/placeholder.svg"}
+            alt="csslogo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
         ),
       },
       {
@@ -212,7 +309,7 @@ const portfolioProjects = [
     link: "#",
     image: comingsoon,
   },
-]
+];
 
 const Projectsection = () => {
   return (
@@ -223,7 +320,9 @@ const Projectsection = () => {
         </p>
       </div>
 
-      <h1 className="font-serif text-3xl sm:text-5xl text-center mt-8 sm:mt-16">My Projects</h1>
+      <h1 className="font-serif text-3xl sm:text-5xl text-center mt-8 sm:mt-16">
+        My Projects
+      </h1>
 
       <p className="text-center text-white/60 mt-5 mx-auto w-full sm:w-[80%] lg:w-[60%]">
         See how I transformed concepts into engaging digital experiences.
@@ -242,7 +341,10 @@ const Projectsection = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <Link href={project.link} className={`${index === 5 ? "hidden" : "opacity-100"}`}>
+                <Link
+                  href={project.link}
+                  className={`${index === 6 ? "hidden" : "opacity-100"}`}
+                >
                   <button className="bg-white text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition-all duration-300">
                     View Project
                   </button>
@@ -250,18 +352,29 @@ const Projectsection = () => {
               </div>
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-bold text-white mb-3">{project.ProjectName}</h3>
+              <h3 className="text-lg font-bold text-white mb-3">
+                {project.ProjectName}
+              </h3>
               <div className="flex justify-between items-center">
                 <ul className="flex space-x-3 items-center">
                   {project.Languages.map((language, idx) => (
-                    <li key={idx} className="bg-gray-700 rounded-full p-2 w-12 h-12 flex items-center justify-center">
+                    <li
+                      key={idx}
+                      className="bg-gray-700 rounded-full p-2 w-12 h-12 flex items-center justify-center"
+                    >
                       {language.title}
                     </li>
                   ))}
                 </ul>
-                <Link href={project.link} className={`${index === 5 ? "hidden" : "opacity-100"}`}>
+                <Link
+                  href={project.link}
+                  className={`${index === 5 ? "hidden" : "opacity-100"}`}
+                >
                   <button className="text-white hover:text-yellow-500 transition-colors duration-300">
-                    <FontAwesomeIcon icon={faArrowRightLong} className="text-xl" />
+                    <FontAwesomeIcon
+                      icon={faArrowRightLong}
+                      className="text-xl"
+                    />
                   </button>
                 </Link>
               </div>
@@ -270,8 +383,7 @@ const Projectsection = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projectsection
-
+export default Projectsection;
