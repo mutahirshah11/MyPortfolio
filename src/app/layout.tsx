@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 // Applying font definitions
 const inter = Inter({ subsets: ['latin'], variable: "--font-sans" });
@@ -27,9 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Apply font classes to the body */}
-      <body className={`${inter.variable} ${calistoga.variable} ${geistSans.variable} ${geistMono.variable}  bg-gray-900 text-white`}>
+      <body className={`${inter.variable} ${calistoga.variable} ${geistSans.variable} ${geistMono.variable}  relative min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-gray-950 text-white`}>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_90%_70%_at_70%_10%,#000_70%,transparent_110%)]" />
         {children}
-        <Analytics/>
+        <Analytics />
         <Footer />
       </body>
     </html>

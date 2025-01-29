@@ -7,8 +7,8 @@ import Navbar from './navbar';
 const Header = () => {
   return (
 
-    <div >
-      <div className='h-1 py-3 ml-[-10px] mt-[-10px] mb-3 animate-fadeInUp '>
+    <div  >
+      <div className='h-1 py-3 ml-[-10px] mt-[-10px] mb-3 animate-fadeInUp  '>
       <Link href= ""> 
 
       <Image src={logo1} alt='logo'   className="ml-8 mt-5 w-[7vw] h-auto border-white/20 border-4 rounded-full hidden lg:block "  /> 

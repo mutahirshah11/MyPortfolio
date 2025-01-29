@@ -58,7 +58,7 @@ const clients = [
 const Clients = () => {
   return (
 
-    <div className='animate-fadeInUp '>
+    <div className='animate-fadeInUp relative  '>
     
     <div className='pt-20 ' >   
 
