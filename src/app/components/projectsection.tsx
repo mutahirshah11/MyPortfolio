@@ -58,12 +58,12 @@ const portfolioProjects = [
       },
     ],
     link: "https://bloggersapp.vercel.app/",
-    image: blog,
+    image: blog, 
   },
 
 
   {
-    ProjectName: "Full Stack E-commerce Website",
+    ProjectName: "Full-Stack E-commerce Website",
     Languages: [
       {
         title: (
