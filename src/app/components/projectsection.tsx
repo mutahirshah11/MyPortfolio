@@ -57,7 +57,7 @@ const portfolioProjects = [
         ),
       },
     ],
-    link: "https://furnitureheaven-navy.vercel.app/",
+    link: "https://bloggersapp.vercel.app/",
     image: blog,
   },
 
