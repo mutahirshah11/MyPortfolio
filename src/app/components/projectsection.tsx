@@ -17,7 +17,7 @@ import jwel from "../images/clients/jwel2.png";
 import perfume from "../images/clients/per.png";
 import realestate from "../images/clients/real.png";
 import Sofa from "../images/photos1/sofa.png";
-import blog from "../images/photos1/blogg.png";
+import blogg from "../images/photos1/blog.png";
 
 const portfolioProjects = [
   {
@@ -58,7 +58,7 @@ const portfolioProjects = [
       },
     ],
     link: "https://bloggersapp.vercel.app/",
-    image: blog, 
+    image: blogg , 
   },
 
 
