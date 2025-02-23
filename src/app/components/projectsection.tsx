@@ -104,7 +104,7 @@ const portfolioProjects = [
   },
 
   {
-    ProjectName: "Jwellery Store UI/UX",
+    ProjectName: "Jwellery Store Landing Page ",
     Languages: [
       {
         title: (
@@ -144,7 +144,7 @@ const portfolioProjects = [
     image: jwel,
   },
   {
-    ProjectName: "Perfume Shop UI/UX",
+    ProjectName: "Perfume Shop Website Front-End",
     Languages: [
       {
         title: (
@@ -184,7 +184,7 @@ const portfolioProjects = [
     image: perfume,
   },
   {
-    ProjectName: "Real Estate UI/UX",
+    ProjectName: "Real Estate Landing Page ",
     Languages: [
       {
         title: (
@@ -263,46 +263,46 @@ const portfolioProjects = [
     link: "#",
     image: amazonpage,
   },
-  {
-    ProjectName: "Facebook Page Clone",
-    Languages: [
-      {
-        title: (
-          <Image
-            src={nextjs || "/placeholder.svg"}
-            alt="nextjslogo"
-            width={32}
-            height={32}
-            className="object-contain"
-          />
-        ),
-      },
-      {
-        title: (
-          <Image
-            src={tailwind || "/placeholder.svg"}
-            alt="tailwindlogo"
-            width={32}
-            height={32}
-            className="object-contain"
-          />
-        ),
-      },
-      {
-        title: (
-          <Image
-            src={typescript || "/placeholder.svg"}
-            alt="typescriptlogo"
-            width={32}
-            height={32}
-            className="object-contain"
-          />
-        ),
-      },
-    ],
-    link: "#",
-    image: facebookpage,
-  },
+  // {
+  //   ProjectName: "Facebook Page Clone",
+  //   Languages: [
+  //     {
+  //       title: (
+  //         <Image
+  //           src={nextjs || "/placeholder.svg"}
+  //           alt="nextjslogo"
+  //           width={32}
+  //           height={32}
+  //           className="object-contain"
+  //         />
+  //       ),
+  //     },
+  //     {
+  //       title: (
+  //         <Image
+  //           src={tailwind || "/placeholder.svg"}
+  //           alt="tailwindlogo"
+  //           width={32}
+  //           height={32}
+  //           className="object-contain"
+  //         />
+  //       ),
+  //     },
+  //     {
+  //       title: (
+  //         <Image
+  //           src={typescript || "/placeholder.svg"}
+  //           alt="typescriptlogo"
+  //           width={32}
+  //           height={32}
+  //           className="object-contain"
+  //         />
+  //       ),
+  //     },
+  //   ],
+  //   link: "#",
+  //   image: facebookpage,
+  // },
   {
     ProjectName: "Coming soon Inshallah ..",
     Languages: [],
@@ -328,7 +328,8 @@ const Projectsection = () => {
         See how I transformed concepts into engaging digital experiences.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+      <div className=" flex justify-center items-center ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-24   ">
         {portfolioProjects.map((project, index) => (
           <div
             key={index}
@@ -345,13 +346,20 @@ const Projectsection = () => {
                   href={project.link}
                   className={`${index === 6 ? "hidden" : "opacity-100"}`}
                 >
-                  <button className="bg-white text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition-all duration-300">
-                    View Project
-                  </button>
+                  <button className="relative px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-widest rounded-full overflow-hidden transition-all duration-500 ease-in-out
+                    bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-[0_3px_15px_rgba(0,0,0,0.4)]
+                    hover:scale-105 hover:shadow-[0_0_20px_#00eaff]
+                    before:absolute before:inset-0 before:bg-white before:opacity-5 before:-translate-x-full before:transition-all before:duration-500 
+                    hover:before:translate-x-0 
+                    after:absolute after:inset-0 after:border after:border-white/10 after:rounded-full after:animate-pulse">
+  View Project 🚀
+</button>
+
+
                 </Link>
               </div>
             </div>
-            <div className="p-4">
+            <div className="p-4  ">
               <h3 className="text-lg font-bold text-white mb-3 ">
                 {project.ProjectName}
               </h3>
@@ -381,6 +389,7 @@ const Projectsection = () => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
